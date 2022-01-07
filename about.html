@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="sub-header">
+         <nav>
+             <a href="index.html"><img src="/Assets4new_project/images/logo.png" alt=""></a>
+             <div class="nav-links" id="navLinks">
+                <img class="fa" src="/Assets4new_project/images/close-btn.png" onclick="hideMenu()" alt="">
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="course.html">COURSE</a></li>
+                     <li><a href="blog.html">BLOG</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                 </ul>
+             </div>
+             <img class="fa" src="/Assets4new_project/images/menu-btn.png" alt="" onclick="showMenu()">
+         </nav>
+         <h1>About Us</h1>
+    </div>
+    <div class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest University</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptate aliquid ullam cupiditate quaerat inventore quidem tempora ab fugit non provident laborum dolores nisi ipsum, optio ipsam! Non inventore aspernatur accusantium fugit facilis impedit, laudantium dolorem tempore nisi! Rerum illo blanditiis atque perspiciatis quia ducimus sint accusantium modi minima necessitatibus.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="/Assets4new_project/images/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab ex iste <br> magni quis magnam minus tempore ea quaerat praesentium.</p>
+        <div class="icons">
+             <img src="/Assets4new_project/images/facebook-brands.svg" alt="">
+             <img src="/Assets4new_project/images/twitter-brands.svg" alt="">
+             <img src="/Assets4new_project/images/instagram-brands.svg" alt="">
+             <img src="/Assets4new_project/images/linkedin-brands.svg" alt="">
+        </div>
+        <p class="icons">Made with <img src="/Assets4new_project/images/heart-regular.svg" alt="" class="icons"> by Easy Tutorials</p>
+    </div>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200"
+        }
+    </script>
+</body>
+</html>
